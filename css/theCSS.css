@@ -1,0 +1,36 @@
+#cdio-head {
+	background-color: Skyblue;
+	height: 100px;
+}
+
+#cdio-body {
+	width: 800px;
+	margin: 0 auto;
+	border: 2px solid red;
+}
+
+#left {
+	float:left;
+	background-color: pink;
+	width: 300px;
+	height: 900px;
+}
+
+#right {
+	float:right;
+	background-color: yellow;
+	width: 400px;
+	height: 900px;
+}
+
+/*清除浮动*/
+.-test-clearFix:after {
+    clear: both;
+    display: block;
+    visibility: hidden; /*设置不可见*/
+    height: 0;
+    line-height: 0;
+    content: ""; /*after伪对象必须的属性，可以设置内容为空*/
+}
+
+.-test-clearFix {}
