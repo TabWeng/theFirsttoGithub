@@ -34,3 +34,8 @@
 }
 
 .-test-clearFix {}
+
+#cdio-head div {
+	font-size: 17pt;
+	background-color: #fff;
+}
